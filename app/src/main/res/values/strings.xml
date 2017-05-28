@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">帮帮校园</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="button_back">返回</string>
+    <string name="prompt_email">邮箱</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登陆</string>
+    <string name="action_regist_in">注册</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">请使用邮箱登陆</string>
+    <string name="error_invalid_password">密码不能为空</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">请填写用户名</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="mainpage_search">搜索</string>
+    <!--用户界面-->
+    <string name="unknow">unknow</string>
+    <string name="help_history">帮助历史</string>
+    <string name="ower_wallet">我的钱包</string>
+    <string name="ower_subscribe">我的订阅</string>
+    <string name="ower_credit">我的信用</string>
+    <string name="ower_score">我的积分</string>
+    <string name="system_setting">系统设置</string>
+    <string name="about">关于帮帮</string>
+    <string name="title_activity_register">register</string>
+</resources>

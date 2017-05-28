@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_lbs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lyzz.bbcampus.pages.MainLBS"
+    android:orientation="vertical"
+    android:background="#f3f3f3">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout">
+    <com.lyzz.bbcampus.viewsetting.XCRoundImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ower"
+        android:id="@+id/owerButton"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/list"
+        android:id="@+id/listButton"
+        android:layout_marginEnd="12dp"
+        android:layout_alignBottom="@+id/owerButton"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:inputType="textPersonName"
+        android:text="@string/mainpage_search"
+        android:ems="10"
+        android:background="@drawable/corners_icon"
+        android:id="@+id/search"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true" />
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_alignParentTop="@id/search"
+        android:layout_marginTop="58dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/complete"
+        android:id="@+id/cancel"
+        android:text="取消"
+        android:textSize="22sp"
+        android:textColor="#494949"/>
+        <ImageButton
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/finish"
+            android:id="@+id/complete"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

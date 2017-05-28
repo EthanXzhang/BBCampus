@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_lbs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lyzz.bbcampus.pages.MainLBS"
+    android:orientation="vertical"
+    android:background="#f3f3f3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout2">
+    <com.lyzz.bbcampus.viewsetting.XCRoundImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ower"
+        android:id="@+id/owerButton"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/list"
+        android:id="@+id/listButton"
+        android:layout_marginEnd="12dp"
+        android:layout_alignBottom="@+id/owerButton"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:inputType="textPersonName"
+        android:text="@string/mainpage_search"
+        android:ems="10"
+        android:background="@drawable/corners_icon"
+        android:id="@+id/search"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true" />
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_alignParentTop="@id/search"
+        android:layout_marginTop="58dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+        <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:background="@drawable/phone"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/callphone"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sms"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="17dp"
+            android:id="@+id/SMS"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="35dp">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/missioncomplete"
+                android:layout_marginEnd="0dp"
+                android:id="@+id/complete" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

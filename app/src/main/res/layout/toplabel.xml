@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageButton
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/ower"
+        android:id="@+id/owerButton"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:layout_width="124dp"
+        android:layout_height="30dp"
+        android:inputType="textPersonName"
+        android:text="@string/mainpage_search"
+        android:ems="10"
+
+        android:background="@drawable/corners_icon"
+        android:id="@+id/search"
+        android:layout_alignBottom="@+id/owerButton"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+    <ImageButton
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/list"
+        android:id="@+id/listButton"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_alignBottom="@+id/search"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

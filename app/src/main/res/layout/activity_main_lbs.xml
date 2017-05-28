@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_lbs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lyzz.bbcampus.pages.MainLBS"
+    android:background="#f5f5f3">
+        <com.lyzz.bbcampus.viewsetting.XCRoundImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ower"
+            android:id="@+id/owerButton"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <com.lyzz.bbcampus.viewsetting.XCRoundImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/list"
+            android:id="@+id/listButton"
+            android:layout_marginEnd="12dp"
+            android:layout_alignBottom="@+id/owerButton"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:text="@string/mainpage_search"
+            android:ems="10"
+            android:background="@drawable/corners_icon"
+            android:id="@+id/search"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true" />
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_alignParentTop="@id/search"
+        android:layout_marginTop="58dp"/>
+
+    <com.lyzz.bbcampus.viewsetting.XCRoundImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/publish"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/publish"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <com.lyzz.bbcampus.viewsetting.XCRoundImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/refresh"
+        android:id="@+id/refresh"
+        android:layout_alignTop="@+id/publish"
+        android:layout_alignEnd="@+id/publish"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="18dp" />
+
+    <com.lyzz.bbcampus.viewsetting.XCRoundImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/contact"
+        android:id="@+id/contact"
+        android:layout_marginEnd="-80dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignTop="@+id/publish"
+        android:layout_alignEnd="@+id/publish" />
+</RelativeLayout>
